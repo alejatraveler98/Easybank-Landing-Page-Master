@@ -1,0 +1,55 @@
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    justify-content: space-between;
+    @include media(large){
+        height: 530px; 
+    }
+    
+    &__content{
+        margin-bottom: 3rem;
+        text-align: center;
+        grid-column: 1/3;
+        align-self: center;
+        @include media(large){
+            padding: 2rem 4rem; 
+            grid-column: 1/2;
+        }
+        @include media(mlarge){
+            padding: 3rem 8rem ; 
+        }
+    }
+    
+    &__title, &__paragraph{
+        margin-bottom: 3rem;
+    }
+    
+    &__background{
+        background-image: url(/images/bg-intro-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: -5px -100px;
+        background-size: 100%;
+        overflow: hidden;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        @include media(large){
+            grid-column: 2/3;
+            background-size: 800px;
+            background-position:-20px -160px;
+            background-image: url(/images/bg-intro-desktop.svg);
+        }
+        
+    }
+    
+    &__image{
+        top: -150px;
+        position: relative;
+        @include media(large){
+            width: 80%;
+            top: -100px; 
+            left: 200px;
+            margin-bottom:-21.875%; 
+        }
+    }
+}

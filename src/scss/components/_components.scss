@@ -1,0 +1,23 @@
+.overflow-hidden{
+    overflow: hidden;
+
+    @include media(large){
+          overflow: scroll;
+    }
+}
+
+.overflow-scroll{
+    overflow: scroll;
+}
+
+.display-block{
+    display: block;
+}
+
+.display-none{
+    display: none;
+
+    @include media(large){
+          display: block;
+    }
+}

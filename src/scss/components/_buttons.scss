@@ -1,0 +1,18 @@
+.button{
+    padding:.8rem 1rem;
+    border-radius: 20px;
+    background: linear-gradient(to right, var(--lime-green),var(--brigh-cyan));
+    text-align: center;
+    color: var(--white);
+    font-size: 12px;
+}
+
+.button--header{
+    @extend .button;
+    margin-bottom: 3rem;
+    display: none;
+    @include media(large){
+          margin-bottom: 0;
+          display: block;
+    }
+}
