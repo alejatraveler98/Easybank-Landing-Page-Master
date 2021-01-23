@@ -1,0 +1,15 @@
+.cards-article__content{
+    padding: 2rem;
+    text-align: left;
+}
+.cards-article__title{
+    --h3-font-size: 1rem;
+    font-size: var(--h3-font-size);
+}
+
+.cards-article__paragraph{
+    font-size: var(--small-font-size);
+}
+.cards-article__img{
+    margin-bottom: 2rem;
+}

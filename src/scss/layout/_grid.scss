@@ -1,6 +1,27 @@
 $padding: 1rem;
 $mb     : 1rem;
 
+
+
+.cards{
+    text-align: center;
+
+    @include media(large){
+          text-align: left;
+    }
+
+    &__img{
+        width:4rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.section__cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    gap:50px;
+}
+
 .l-container {
     max-width    : 1200px;
     padding-left : $padding;

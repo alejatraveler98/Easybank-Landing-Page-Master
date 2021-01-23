@@ -1,0 +1,26 @@
+.choose{
+
+    &__header{
+        margin-bottom: 4rem;
+        text-align: center;
+        @include media(large){
+             text-align: left; 
+        }
+    }
+
+    &__title{
+        font-size: var(--h1-font-size);
+
+    }
+    &__paragraph{
+        font-size: 18px;
+        @include media(large){
+            width: 50%;
+              
+        }
+    }
+
+    
+
+}
+
