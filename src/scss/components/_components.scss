@@ -1,3 +1,11 @@
+.choose__header, .last__header{
+    margin-bottom: 4rem;
+    text-align: center;
+    @include media(large){
+         text-align: left; 
+    }
+}
+
 .overflow-hidden{
     overflow: hidden;
 

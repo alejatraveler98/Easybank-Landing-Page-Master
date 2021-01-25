@@ -1,15 +1,36 @@
-.cards-article__content{
-    padding: 2rem;
-    text-align: left;
-}
-.cards-article__title{
-    --h3-font-size: 1rem;
-    font-size: var(--h3-font-size);
+.last__title{
+    font-size: var(--h1-font-size);
 }
 
-.cards-article__paragraph{
-    font-size: var(--small-font-size);
-}
-.cards-article__img{
-    margin-bottom: 2rem;
+.cards-article{
+    &__content{
+
+        padding: 2rem;
+        text-align: left;
+    }
+
+    &__author{
+        --small-font-size:.7rem;
+        font-size: var(--small-font-size);
+        color: var(--grayish-blue);
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    &__title{
+        --h3-font-size: 1rem;
+        font-size: var(--h3-font-size);
+    }
+
+    &__paragraph{
+        font-size: var(--small-font-size);
+    }
+
+    &__img{
+        margin-bottom: 2rem;
+        @include media(medium){
+            height: 170px;
+        }
+    }
+    
 }

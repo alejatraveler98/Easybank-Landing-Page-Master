@@ -16,3 +16,9 @@
           display: block;
     }
 }
+
+.button--header{
+    @extend .button;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
