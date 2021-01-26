@@ -4,7 +4,6 @@
 
 .cards-article{
     &__content{
-
         padding: 2rem;
         text-align: left;
     }
@@ -29,7 +28,7 @@
     &__img{
         margin-bottom: 2rem;
         @include media(medium){
-            height: 170px;
+            height: 220px;
         }
     }
     

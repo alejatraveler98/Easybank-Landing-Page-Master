@@ -15,12 +15,18 @@
         @include media(large){
             padding: 2rem 4rem; 
             grid-column: 1/2;
+            text-align: left;
         }
         @include media(mlarge){
             padding: 3rem 8rem ; 
         }
     }
     
+    &__title{
+        --h1-font-size: 3.5rem;
+        font-size:var(--h1-font-size);
+    }
+
     &__title, &__paragraph{
         margin-bottom: 3rem;
     }
