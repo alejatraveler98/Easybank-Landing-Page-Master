@@ -17,8 +17,13 @@
     }
 
     &__title{
-        --h3-font-size: 1rem;
         font-size: var(--h3-font-size);
+        @include media(medium){
+            --h3-font-size: 1rem;
+        }
+        &:hover{
+            color:var(--lime-green);
+        }
     }
 
     &__paragraph{
@@ -28,7 +33,7 @@
     &__img{
         margin-bottom: 2rem;
         @include media(medium){
-            height: 220px;
+            height: 210px;
         }
     }
     

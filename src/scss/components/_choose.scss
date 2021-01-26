@@ -9,7 +9,9 @@
     }
 
     &__title{
-        font-size: var(--h1-font-size);
+        @include media(large){
+            font-size: var(--h1-font-size);
+        }
 
     }
     &__paragraph{

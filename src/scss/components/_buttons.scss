@@ -4,7 +4,8 @@
     background: linear-gradient(to right, var(--lime-green),var(--brigh-cyan));
     text-align: center;
     color: var(--white);
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 700;
 }
 
 .button--header{
@@ -21,4 +22,8 @@
     @extend .button;
     display: inline-block;
     margin-bottom: 2rem;
+}
+
+.button:hover{
+    opacity: .7;
 }

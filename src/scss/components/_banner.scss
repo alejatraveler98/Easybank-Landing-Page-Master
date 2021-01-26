@@ -23,8 +23,10 @@
     }
     
     &__title{
-        --h1-font-size: 3.5rem;
         font-size:var(--h1-font-size);
+        @include media(medium){
+            --h1-font-size: 3.5rem;
+        }
     }
 
     &__title, &__paragraph{
